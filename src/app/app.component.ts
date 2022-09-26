@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'skeleton-app';
+
+  loaded = false;
+
+  ngOnInit(): void {
+    setInterval(() => {
+      this.loaded = true;
+    }, 3000);
+  }
 }
