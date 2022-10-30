@@ -17,8 +17,8 @@ export class SkeletonLoaderComponent implements OnInit {
 
   getMyStyles() {
     const myStyles = {
-      'width.px': this.Cwidth ? this.Cwidth : '',
-      'height.px': this.Cheight ? this.Cheight : '',
+      'width.px': this.Cwidth ?? '',
+      'height.px': this.Cheight ?? '',
       'border-radius': this.circle ? '50%' : ''
     };
     return myStyles;
